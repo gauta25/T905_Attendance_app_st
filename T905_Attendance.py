@@ -1,6 +1,6 @@
 # Import python packages
 import streamlit as st
-from snowflake.snowpark.context import get_active_session
+# from snowflake.snowpark.context import get_active_session
 import pandas as pd
 
 # Title and Subtitle
@@ -13,7 +13,8 @@ st.write(
 )
 
 # Init
-session = get_active_session()
+cnx = st.connection("snowflake")
+session = cnx.session()
 
 # Col function
 from snowflake.snowpark.functions import col
