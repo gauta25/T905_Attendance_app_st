@@ -1,7 +1,7 @@
 # requirements.txt
 snowflake-snowpark-python
 streamlit
-
+snowflake-connector-python
 
 
 # name: app_environment
