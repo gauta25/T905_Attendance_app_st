@@ -3,6 +3,7 @@ snowflake-snowpark-python
 streamlit
 requests
 google-api-python-client
+st-gsheets-connection
 # name: app_environment
 # channels:
 #   - snowflake
