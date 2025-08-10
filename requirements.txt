@@ -2,6 +2,7 @@
 snowflake-snowpark-python
 streamlit
 requests
+google-api-python-client
 # name: app_environment
 # channels:
 #   - snowflake
