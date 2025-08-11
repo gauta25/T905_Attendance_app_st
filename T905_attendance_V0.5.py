@@ -18,6 +18,7 @@ USERS = {
 }
 SPREADSHEET_ID = "YOUR_SPREADSHEET_ID"
 
+
 # ---- GOOGLE SHEETS AUTH ----
 creds = Credentials.from_service_account_info(
     st.secrets["gcp_service_account"],
@@ -27,6 +28,7 @@ client = gspread.authorize(creds)
 sheet = client.open_by_key('14n6SMM0OtUjeE2fci37hSG0UdjKsdJTp5EyTWJiCT4Q')
 
 # ---- FUNCTIONS ----
+@st.cache_data(ttl=60)
 def get_attendance_df(patrol):
     ws = sheet.worksheet(patrol)
     data = ws.get_all_values()
