@@ -24,7 +24,7 @@ creds = Credentials.from_service_account_info(
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
 )
 client = gspread.authorize(creds)
-sheet = client.open_by_key(SPREADSHEET_ID)
+sheet = client.open_by_key('14n6SMM0OtUjeE2fci37hSG0UdjKsdJTp5EyTWJiCT4Q')
 
 # ---- FUNCTIONS ----
 def get_attendance_df(patrol):
