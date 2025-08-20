@@ -39,7 +39,7 @@ if time_to_q:
     # NEEDS TO BE UPDATED TO BE AUTOMATIC!!!!!!!!!
     meetings_possible = 6
     st.write("Meetings attended:", meetings_attended)
-    meetings_ratio = meetings_attended/meetings_possible * 100
+    meetings_ratio = round(meetings_attended/meetings_possible * 100, 2)
     st.write(f"""So far, {queried_name} has attended {meetings_ratio}% 
 of meetings. \n\nThe minimum requirement for getting credit for
 a leadership position is 51%. \n\nA good amount to aim for is 90%,
