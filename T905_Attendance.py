@@ -38,6 +38,7 @@ if time_to_q:
     meetings_attended = meetings_attended[0]['MEETINGS_COUNT']
     # NEEDS TO BE UPDATED TO BE AUTOMATIC!!!!!!!!!
     meetings_possible = 6
+    st.write("Meetings attended:", meetings_attended)
     meetings_ratio = meetings_attended/meetings_possible * 100
     st.write(f"""So far, {queried_name} has attended {meetings_ratio}% 
 of meetings. \n\nThe minimum requirement for getting credit for
