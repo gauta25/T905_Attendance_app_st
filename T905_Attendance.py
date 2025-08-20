@@ -26,7 +26,7 @@ queried_name = st.multiselect('Choose a name to get attendance', Tdata,
                              max_selections = 1)
 
 
-st.write("\n\n\n\n\n\n\n")
+st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
 
 time_to_q = st.button("Get attendance")
 
