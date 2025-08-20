@@ -26,9 +26,8 @@ queried_name = st.multiselect('Choose a name to get attendance', Tdata,
                              max_selections = 1)
 
 
-st.write("")
-st.write("")
-st.write("")
+st.write("\n\n\n\n\n\n\n")
+
 time_to_q = st.button("Get attendance")
 
 if time_to_q:
