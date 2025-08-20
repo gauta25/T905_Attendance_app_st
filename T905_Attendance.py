@@ -6,7 +6,9 @@ import pandas as pd
 # Title and Subtitle
 st.title(f"Troop 905 Attendance Tracker")
 st.write(
-  """This is an early version of a proposed attendance tracker for Troop 905.
+  """This is an early version of a proposed attendance tracker for Troop 905.\n 
+
+  Attendance was updated August 19, 9:20pm
   """
 )
 
@@ -43,5 +45,7 @@ if time_to_q:
 of meetings. \n\nThe minimum requirement for getting credit for
 a leadership position is 51%. \n\nA good amount to aim for is 90%,
 or an 'A' grade.""")
+
+st.write("Email gautamkanwar9@gmail.com for any changes")
     # except:
     #     st.write('Something bad happened.')
