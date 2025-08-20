@@ -3,6 +3,7 @@ import streamlit as st
 # from snowflake.snowpark.context import get_active_session
 import pandas as pd
 
+st.title("Currently facing technical difficulties . . . will fix tomorow\n-August 19, 9:45pm')
 # Title and Subtitle
 st.title(f"Troop 905 Attendance Tracker")
 st.write(
