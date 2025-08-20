@@ -46,6 +46,6 @@ of meetings. \n\nThe minimum requirement for getting credit for
 a leadership position is 51%. \n\nA good amount to aim for is 90%,
 or an 'A' grade.""")
 
-st.write("Email gautamkanwar9@gmail.com for any changes")
+st.write("Email gautamkanwar9@gmail.com for any changes.")
     # except:
     #     st.write('Something bad happened.')
