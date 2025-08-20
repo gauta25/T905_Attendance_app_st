@@ -4,11 +4,9 @@ import streamlit as st
 import pandas as pd
 
 # Title and Subtitle
-st.title(f"Troop 905 Attendance Tracker📚 Version 0.0")
+st.title(f"Troop 905 Attendance Tracker")
 st.write(
-  """This is a prototype for a proposed website for Troop 905 
-  attendance for a more accesible interface as compared 
-  to a google sheet. Attendance was updated August 8 11:00am.
+  """This is an early version of a proposed attendance tracker for Troop 905.
   """
 )
 
@@ -26,6 +24,9 @@ queried_name = st.multiselect('Choose a name to get attendance', Tdata,
                              max_selections = 1)
 
 
+st.write("")
+st.write("")
+st.write("")
 time_to_q = st.button("Get attendance")
 
 if time_to_q:
