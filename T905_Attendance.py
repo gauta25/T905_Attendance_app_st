@@ -5,8 +5,7 @@ import pandas as pd
 # Title and Subtitle
 st.title(f"Troop 905 Attendance Tracker")
 st.write(
-  """This is an early version of a proposed attendance tracker for Troop 905.\n 
-
+  """\n
   Attendance was updated August 19, 9:20pm
   """
 )
