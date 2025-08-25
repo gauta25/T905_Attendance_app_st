@@ -11,8 +11,6 @@ def attendance():
 
     Tdata = session.table('T905.ATTENDANCE.T905_ATTENDANCE').to_pandas()
 
-    # st.title("Troop 905 Attendance")
-
     queried_name = st.selectbox('Choose a name to get attendance', Tdata)
 
     st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
@@ -37,20 +35,23 @@ or an 'A' grade.""")
 
     st.write("Email gautamkanwar9@gmail.com for any changes.")
 
-# --- LOGIN PAGE ---
+# --- MAIN APP LOGIC ---
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
+# This is the core change. The login code is now in a single if/else block.
 if not st.session_state.logged_in:
     st.title("Troop 905 Attendance Tracker")
     password = st.text_input("Enter password", type="password")
     if st.button("Login"):
         if password == "905Member":
             st.session_state.logged_in = True
-            st.success("Login successful! Reloading app...")
-            attendance()
+            st.success("Login successful! Welcome.")
+            st.rerun() # Use st.rerun to refresh and display the attendance page
         else:
             st.error("Incorrect password")
-    st.stop()  # Prevents rest of app from running until login is successful
+else:
+    # If the user is logged in, this code runs
+    attendance()
     
 
