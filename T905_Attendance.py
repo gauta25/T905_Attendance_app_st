@@ -12,20 +12,11 @@ if not st.session_state.logged_in:
     if st.button("Login"):
         if password == "Trustworthy":
             st.session_state.logged_in = True
-            st.success("Login successful!")
-            st.experimental_rerun()
+            st.success("Login successful! Reloading app...")
         else:
             st.error("Incorrect password")
     st.stop()  # Prevents rest of app from running until login is successful
-
-# --- APP CONTENT AFTER LOGIN ---
-st.title("Troop 905 Attendance Tracker")
-st.write(
-  """\n
-  Attendance was updated August 19, 9:20pm
-  """
-)
-
+    
 # Init
 cnx = st.connection("snowflake")
 session = cnx.session()
