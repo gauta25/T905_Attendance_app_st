@@ -13,8 +13,7 @@ def attendance():
 
     # st.title("Troop 905 Attendance")
 
-    queried_name = st.selectbox('Choose a name to get attendance', Tdata,
-                             max_selections=1)
+    queried_name = st.selectbox('Choose a name to get attendance', Tdata)
 
     st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
 
