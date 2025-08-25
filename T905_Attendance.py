@@ -27,7 +27,7 @@ Tdata = session.table('T905.ATTENDANCE.T905_ATTENDANCE').to_pandas()
 
 # st.title("Troop 905 Attendance")
 
-queried_name = st.multiselect('Choose a name to get attendance', Tdata,
+queried_name = st.selectbox('Choose a name to get attendance', Tdata,
                              max_selections=1)
 
 st.markdown("<br><br><br><br><br>", unsafe_allow_html=True)
