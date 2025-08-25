@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from snowflake.snowpark.functions import col
 
+st.title("Website in maintainence. Will be back soon. \n-11:00am Aug 25 2025 /n - Gautam")
 # --- LOGIN PAGE ---
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
