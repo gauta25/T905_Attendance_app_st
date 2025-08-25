@@ -23,7 +23,7 @@ session = cnx.session()
 
 Tdata = session.table('T905.ATTENDANCE.T905_ATTENDANCE').to_pandas()
 
-st.title("Troop 905 Attendance")
+# st.title("Troop 905 Attendance")
 
 queried_name = st.multiselect('Choose a name to get attendance', Tdata,
                              max_selections=1)
