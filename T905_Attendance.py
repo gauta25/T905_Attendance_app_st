@@ -10,7 +10,7 @@ if not st.session_state.logged_in:
     st.title("Troop 905 Attendance Tracker")
     password = st.text_input("Enter password", type="password")
     if st.button("Login"):
-        if password == "Trustworthy":
+        if password == "905Member":
             st.session_state.logged_in = True
             st.success("Login successful! Reloading app...")
         else:
